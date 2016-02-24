@@ -10,9 +10,10 @@ var sourcemaps    = require('gulp-sourcemaps');
 var assign        = require('lodash.assign');
 var browserSync   = require('browser-sync');
 // var sass          = require('gulp-sass');
-var spritesmith  = require('gulp.spritesmith');
-var stylus = require('gulp-stylus');
-var imagemin = require('gulp-imagemin');
+var spritesmith   = require('gulp.spritesmith');
+var stylus        = require('gulp-stylus');
+var imagemin      = require('gulp-imagemin');
+var jade          = require('gulp-jade');
 
 var autoprefixer  = require('gulp-autoprefixer');
 var react         = require('react');
@@ -85,6 +86,14 @@ gulp.task('html', function() {
     .pipe(browserSync.reload({stream:true}));
 });
 
+// ////////////////////////////////////////////////
+// Jade Tasks
+// ////////////////////////////////////////////////
+gulp.task('jade', function() {
+  return gulp.src('src/jade/*.jade')
+    .pipe(jade())
+    .pipe(gulp.dest('public/jade'));
+});
 
 // ////////////////////////////////////////////////
 // Styles Tasks SCSS
@@ -179,9 +188,10 @@ gulp.task('watch', function() {
   // gulp.watch('src/scss/**/*.scss', ['styles']);
   gulp.watch('src/stylus/**/*.styl', ['styles']);
   gulp.watch('src/images/sprite/*', ['sprite']);
+  gulp.watch('src/jade/*.jade', ['jade']);
   gulp.watch('src/images/*', ['imagemin']);
 });
 
 
-gulp.task('default', ['sprite','imagemin','js', 'styles', 'browserSync', 'watch']);
+gulp.task('default', ['jade','sprite','imagemin','js', 'styles', 'browserSync', 'watch']);
 
