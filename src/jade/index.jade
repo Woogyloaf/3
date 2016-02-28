@@ -8,13 +8,28 @@ html.no-js(lang='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
     // Place favicon.ico in the root directory
-    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='../css/style.css')
   body
-    .hello
-      h1 hello from Jade!
-      a(href='##', title='title')
-    #app
-    script(src='js/main.js')
+    
+  include ./_includes/top.jade
+  include ./_includes/slider.jade
+  include ./_includes/social.jade
+  include ./_includes/tabs.jade
+  include ./_includes/sub-list.jade
+  include ./_includes/sub-list-two.jade
+  include ./_includes/awesome.jade
+  include ./_includes/pricing.jade
+  include ./_includes/feedback.jade
+  include ./_includes/stylish.jade
+  include ./_includes/contacts.jade
+  include ./_includes/footer.jade
+
+
+
+  include ./_includes/HelloJade.jade
+     #app
+    script(src='../js/main.js')
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

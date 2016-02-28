@@ -1,0 +1,445 @@
+
+html, body
+	font-family $open-sans
+h2
+	margin 0
+.navigation
+	background black
+	.logo p
+		margin 0
+		padding 0
+		color white
+		font-size 45px
+		span
+			color $axit-orange
+			font-weight 300
+			
+	nav
+		text-align right
+		a
+			margin-left 25px
+			color white
+			text-decoration none
+.--center
+	justify-content center
+	align-items center
+.divider
+	width 64px
+	height 3px
+.white
+	background $white
+.orange
+	background $axit-orange
+
+h1.big-logo
+	@extend .navigation .logo p
+	font-size 105px
+	margin 0
+	padding 0
+.slider
+	h2,
+	p
+		font-family $Raleway
+		text-align left
+		color white
+	h2
+		font-weight 300
+		margin-right 30px
+		font-size 36px
+	
+// .slider
+.slider
+	background #f09 url('../images/bg-img1.jpg')no-repeat
+	height 637px
+	.container
+	.row
+		height 100%
+.free-trial
+	display flex
+.trial-box
+	width 350px
+	border-radius 5px
+	background white
+	h3
+		color black
+		border-radius 5px 5px 0 0
+		text-align center
+		background #f5f5f5
+		display block
+		margin 0
+		padding 0
+		height $h = 54px
+		line-height $h
+	span
+		color orange
+	input[type="text"]
+	input[type="email"]
+	input[type="password"]
+		width 300px
+		// background olive + 20%
+		border none
+		color $c = #bdbdbd
+		border-bottom 2px solid $c
+		padding-left 15px
+		outline: none
+	input[type="submit"]
+		width 100%
+		border-radius 0 0 5px 5px
+		background $axit-orange
+		height $h = 54px
+		line-height $h
+		font-size 15px
+		font-weight 600
+		color white
+		border none
+		display block
+	.input-box
+		height 205px
+		margin-bottom 25px
+		margin-top 25px
+		display flex
+		justify-content center
+		flex-wrap wrap
+
+//////////////////////////
+// social-box
+//////////////////////////
+.social-box
+	font-family $open-sans
+	background white
+	color #cccccc
+	box-shadow 0 1px 2px 1px #86878b
+	.social-media
+		flex 1
+		@media (max-width: 600px)
+			flex none
+		h3
+			color #292929
+		p
+			color #86878b
+	.social-icons
+		flex 2
+		text-align right
+		a
+			color #cccccc
+			text-decoration none
+			margin-left 40px
+			font-size 55px
+			
+	.icon-holder
+		display flex
+		padding-left 100px
+		justify-content space-between
+
+//////////////////////////
+// tabs
+//////////////////////////
+.axit-tabs
+	padding 146px 0 137px 0
+	.container.row
+		.tab-nav
+			.tab
+				background #292929
+				width 100px
+				height $h = 100px
+				margin-bottom 1px
+				text-align center
+				line-height $h
+				color white
+				border-radius 5px
+				&:hover
+					background $axit-orange
+				// 	@extends .active;
+			.active
+				background $axit-orange
+				// &:hover
+		.nav-view 
+			flex 5
+//////////////////////////
+// sub list
+//////////////////////////
+.subl-list
+	padding 100px 0
+	.sub-img
+		flex 1
+		h3
+			font-family $open-sans
+			font-size 20px
+	.sub-text
+		flex 9
+		h4
+			font-family $open-sans
+			font-size 14px
+			margin: 0
+			padding 0
+	p
+		color #86878b
+		font-size 14px
+	.some-text
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0px
+.sub-section
+	margin-top 30px
+	
+
+//////////////////////////
+// sub list two
+//////////////////////////
+
+
+
+//////////////////////////
+// Awesome
+//////////////////////////
+.awesome
+	background white
+	text-align center
+	padding 72px 0
+	h2
+		margin 0
+		padding 0
+		font-size 36px
+		font-weight 300
+		text-transform uppercase
+		color #212121
+	p
+		color #86878b
+		font-size 14px
+		line-height 20px
+	h5
+		font-size 20px
+		font-weight 600
+	.row
+		padding 70px 0
+	.divider.orange
+		display inline-block
+		
+//////////////////////////
+// Pricing
+//////////////////////////		
+.pricing
+	text-align center
+	padding 72px 0
+	.divider
+		margin-bottom 30px
+	.row
+		justify-content space-between
+		align-items flex-end
+		margin-top 72px
+	.divider.orange
+		display inline-block
+	h2
+		font-size: 36px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #212121;
+	p
+		color #86878b
+		margin 0
+		
+	.pricing-item
+		max-width 345px
+		h6
+			font-size 20px
+			font-weight 600
+			background #292929
+			display block
+			color white
+			margin 0
+			padding 15px
+			border-bottom 1px solid #86878b
+			
+		.cost
+			color white
+			font-size 35px
+			background #292929
+			// padding-top 10px
+			padding-bottom 20px
+			p
+				font-family $Raleway
+				font-weight 600
+			span
+				font-weight 600
+				font-size 94px
+			.small-text
+				font-size 14px
+				color #86878b
+				font-weight 600
+				font-style italic
+	p.spec
+		font-family $open-sans
+		font-weight 400
+		display block
+		height 40px
+		border-bottom 1px solid #f5f5f5
+		line-height 40px
+		text-transform uppercase
+		background $white
+		&:last-child
+			border-bottom none
+	.most-popular
+		text-transform uppercase
+		background $axit-orange
+		color $white
+		display block
+		min-height 5px
+		margin 0
+		p
+			color $white
+			padding 15px 0
+
+//////////////////////////
+// feedback
+//////////////////////////
+
+.feedback
+	text-align center
+	background $white
+	padding 72px 0
+	h2
+		margin 0
+		padding 0
+		font-size 36px
+		font-weight 300
+		text-transform uppercase
+		color #212121
+	.container
+	.divider
+		text-align center
+	.row
+		justify-content space-between
+	.divider
+		display inline-block
+	.feedback-item
+		max-width 275px
+		.feedbakc-text
+			background #f5f5f5
+			position relative
+			color #86878b
+			padding 10px
+			font-style italic
+			font-size 14px
+			font-family $open-sans
+			border-radius 5px
+			.arrow
+				position absolute
+				width 0
+				height 0
+				bottom -19px
+				left 20px
+				border-style solid
+				border-width: 20px 15px 0 15px;
+				border-color: #f5f5f5 transparent transparent transparent;
+		.thumbnail
+			margin-top 10px
+			padding-top 20px
+			text-align left
+			.image
+				display block
+				float left
+				margin-right 16px
+			.about-persone
+				h5
+				p
+					margin 0
+					padding 0
+				h5
+					margin-top 15px
+				p
+					margin-top 3px
+				
+//////////////////////////
+// Stylish
+//////////////////////////
+.stylish
+	text-align center
+	color white
+	height 320px
+	background url('../images/img_style.jpg') no-repeat
+	padding-top 75px
+	padding-bottom 63px
+	h2
+		font-size: 36px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $white;
+		margin 0
+	.divider
+		display inline-block
+	.download-btn-white
+		border 2px solid $white
+		color $white
+		padding 14px 30px
+		font-size 15px
+		font-family $open-sans
+		font-weight 600
+		display inline-block
+		
+//////////////////////////
+// Contacts
+//////////////////////////
+
+.contacts
+	text-align center
+	padding-top 72px
+	padding-bottom 80px
+	.divider
+		display inline-block
+	h2
+		font-size: 36px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #212121;
+		margin 0px
+	form
+		.left-inp
+			height 180px
+			input
+				width 100%
+				max-width: 525px;
+				border: none;
+				color: #bdbdbd;
+				border-bottom: 2px solid #bdbdbd;
+				padding-left: 15px;
+				outline: none;
+				height 60px
+				background none
+		.right-inp
+			textarea
+				padding-top 20px
+				width 100%
+				max-width: 525px;
+				border: none;
+				color: #bdbdbd;
+				border-bottom: 2px solid #bdbdbd;
+				padding-left: 15px;
+				outline: none;
+				height 180px
+				background none
+		input[type="submit"]
+			background $axit-orange
+			padding 16px 21px
+			color $white
+			border none
+			border-radius 5px
+			font-size 15px
+			font-weight 600
+			margin-top 38px
+		
+//////////////////////////
+// Footer
+//////////////////////////
+footer
+	background black
+	text-align center
+	padding 24px 0 15px 0
+	.icon-holder
+		font-size 24px
+		a
+			margin 0 14px
+			color #ccc
+			text-decoration none
+	p
+		color $white
+		font-size 12px
